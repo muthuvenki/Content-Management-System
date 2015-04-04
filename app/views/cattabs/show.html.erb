@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cattab.name %>
+</p>
+
+
+<p>
+  <strong>Content:</strong>
+  <%= @cattab.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_cattab_path(@cattab) %> |
+<%= link_to 'Back', cattabs_path %>

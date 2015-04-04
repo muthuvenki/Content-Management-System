@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cattabs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th>Content</th>
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cattabs.each do |cattab| %>
+      <tr>
+        <td><%= cattab.name %></td>
+        <td><%= cattab.content %></td>
+        <td><%= link_to 'Show', cattab %></td>
+        <td><%= link_to 'Edit', edit_cattab_path(cattab) %></td>
+        <td><%= link_to 'Destroy', cattab, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cattab', new_cattab_path %>

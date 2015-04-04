@@ -1,0 +1,11 @@
+Categories for <%=@menu.name%>
+<table class="table">
+  <thead>
+    <td><b>Name</b></td>
+    <td><b>desc</b></td>
+  </thead>
+<%@category.each do |cat|%>
+  <tr>  <td>  <%=cat.name%></td>
+    <td> <%=cat.desc%></td></tr>
+<%end%>
+</table>

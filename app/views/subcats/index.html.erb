@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Subcats</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Desc</th>
+      <th>Visible</th>
+      <th>Show tabs</th>
+      <th>Add tabs</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subcats.each do |subcat| %>
+      <tr>
+        <td><%= subcat.name %></td>
+        <td><%= subcat.desc %></td>
+        <td><%= subcat.visible %></td>
+        <td><%=link_to "Get tabs",subcat_tabs_path(subcat)%></td>
+        <td><%=link_to "Add tabs",add_subcat_cattabs_path(subcat)%></td>
+        <td><%= link_to 'Show', subcat %></td>
+        <td><%= link_to 'Edit', edit_subcat_path(subcat) %></td>
+        <td><%= link_to 'Destroy', subcat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subcat', new_subcat_path %>
