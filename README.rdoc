@@ -1,3 +1,21 @@
 
 
+Menu
+http://www.image-share.com/upload/2906/253.jpg
+For list of menu
+http://128.199.95.160/menus.json
 
+Categories
+http://www.image-share.com/upload/2906/254.jpg
+For list of categories
+http://128.199.95.160/menu/1/categories.json
+
+Events in the categories
+http://www.image-share.com/upload/2906/255.jpg
+For list of Events in the categories
+http://localhost:3000/categories/1/subcats.json
+
+events description 
+http://www.image-share.com/upload/2906/256.jpg
+For content 
+http://localhost:3000/subcats/2/cattabs.json
